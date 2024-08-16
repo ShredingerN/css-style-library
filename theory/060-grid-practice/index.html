@@ -6,6 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            /*фикс на футер и фикс на хэдер*/
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 100px 1fr;
+            min-height: 100vh;
+            background-color: #fadaec;
+   
+        }
+        
+            .section{
+            background-color: #dd86d6;
+            padding: 10px;
+            margin: 10px 0px 10px 10px;
+            flex:1
+
+        }
+
+        .main{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+
+        }
+        .footer,.header{
+            grid-column: span 2;
+            background-color: rgb(131, 14, 155);
+            color: #d1d1d0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .aside{
+            background-color: rgb(184, 82, 179);
+            color: #d1d1d0;
+            padding: 10px;
+        }
+        @media screen and (max-width: 750px) {
+        .main {
+
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+        }
+        
+}
 
     </style>
 </head>
