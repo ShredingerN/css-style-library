@@ -5,15 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>bootstrap</title>
-    <!-- TODO 1: добавьте ссылку на bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         /* TODO 2: пропишите стиль для выравнивания по центру экрана */
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
     </style>
 </head>
 
 <body>
     <!-- TODO 3: добавьте любую карточку из bootstrap набора-->
-    <!-- TODO 4: добавьте любую картинку используя сторонний api -->
+    <div class="card" style="width: 18rem;">
+        <img src="https://loremflickr.com/440/340" class="card-img-top" alt="mew">
+        <div class="card-body">
+          <h5 class="card-title">Cats</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo in rerum iste commodi culpa, quo placeat nisi aliquam dignissimos vel corporis, asperiores veniam omnis adipisci quis quos? Ea, commodi id.</p>
+          <a href="#" class="btn btn-primary">Go mew</a>
+        </div>
+      </div>
 
 </body>
 
